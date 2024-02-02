@@ -1,9 +1,18 @@
 using System;
-
-class Program
-{
-    static void Main(string[] args)
+    public class Person
     {
-        Console.WriteLine("Hello Learning02 World!");
+            public string _givenName = "";
+            public string _familyName = "";
+            public Person()
+            {
+            }
+            public void ShowEasternName()
+            {
+                Console.WriteLine($"{_familyName}, {_givenName}");
+            }
+            public void ShowWesternName()
+            {
+                Console.WriteLine($"{_givenName},{_familyName}");
+            }
+
     }
-}
